@@ -1,0 +1,19 @@
+---
+---
+[
+  {"title":"East Asia","url":"{{ '/regions/east-asia.html' | relative_url }}","summary":"Regional overview"},
+  {"title":"Regions","url":"{{ '/regions/index.html' | relative_url }}","summary":"Regional studies"},
+  {"title":"Countries","url":"{{ '/countries/index.html' | relative_url }}","summary":"Country profiles"},
+  {"title":"Daily Affairs","url":"{{ '/daily-affairs/index.html' | relative_url }}","summary":"Briefings"},
+  {"title":"History","url":"{{ '/history/index.html' | relative_url }}","summary":"Historical context"},
+  {"title":"Global Issues","url":"{{ '/global-issues/index.html' | relative_url }}","summary":"Cross-border research"},
+  {"title":"Research & Analysis","url":"{{ '/research/index.html' | relative_url }}","summary":"Policy research"},
+  {"title":"Sources & Research Standards","url":"{{ '/sources/index.html' | relative_url }}","summary":"Editorial standards"}
+  {% for collection in site.collections %}
+    {% if collection.label != "posts" %}
+      {% for document in collection.docs %}
+  ,{"title":{{ document.title | jsonify }},"url":{{ document.url | relative_url | jsonify }},"summary":{{ document.summary | default: document.category | jsonify }},"tags":{{ document.tags | join: " " | jsonify }}}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+]

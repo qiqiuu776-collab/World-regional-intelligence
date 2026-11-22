@@ -1,0 +1,14 @@
+{% assign documents = site[include.collection] | sort: "title" %}
+{% if documents.size > 0 %}
+  {% if include.collection == "countries" %}<div class="countries">{% else %}<div class="grid">{% endif %}
+  {% for document in documents %}
+    {% if include.collection == "countries" %}
+      <a class="country" href="{{ document.url | relative_url }}"><small>{{ document.region | default: document.category | escape }}</small><strong>{{ document.title | escape }}</strong><p>{{ document.summary | escape }}</p></a>
+    {% else %}
+      <a class="tile" href="{{ document.url | relative_url }}"><span>{{ document.category | default: include.label | escape }}</span><h3>{{ document.title | escape }}</h3><p>{{ document.summary | escape }}</p></a>
+    {% endif %}
+  {% endfor %}
+  </div>
+{% else %}
+  <div class="note">{{ include.empty_text | default: "No articles have been published in this collection yet." | escape }}</div>
+{% endif %}

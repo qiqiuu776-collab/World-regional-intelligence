@@ -1,9 +1,12 @@
-
-# South Korea
-
-**Country Profile | East Asia**
-
-Last Updated: November 2026
+---
+title: South Korea
+region: East Asia
+category: Country profile
+summary: A structured profile of the Republic of Korea's institutions, economy, society, foreign relations and strategic environment.
+last_updated: November 2026
+tags: [South Korea, East Asia, country profile]
+permalink: /countries/south-korea.html
+---
 
 ## 1. Country Overview
 - Official Name:
