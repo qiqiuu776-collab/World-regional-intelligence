@@ -4,6 +4,8 @@ An independent research platform exploring countries, regions and global affairs
 
 Website: https://qiqiuu776-collab.github.io/World-regional-intelligence/
 
+The homepage is an interactive historical atlas. Its timeline records selected episodes in `_data/exchange_timeline.yml`; each entry should link to a reliable source and describe routes as generalized, not to scale.
+
 ## Writing and publishing
 
 Write articles in Markdown with YAML front matter. Jekyll builds each article page, its collection listing, and the search index when the site is published through GitHub Pages.
@@ -27,6 +29,7 @@ For GitHub Pages, use Settings > Pages > Deploy from a branch > main > /(root). 
 - _layouts/: shared page layouts
 - _includes/: reusable collection listing
 - assets/: shared styles and scripts
+- _data/exchange_timeline.yml: sourced moments and schematic route segments used by the homepage map
 - sources/: sourcing and editorial standards
 
 ## Editorial principles
