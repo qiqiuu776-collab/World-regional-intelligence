@@ -8,6 +8,8 @@ tags: [China, East Asia, country profile]
 permalink: /countries/china.html
 ---
 
+<div class="note">This profile is a structured research framework, not a verified current country report. Add dated facts, primary-source links and clearly labelled analysis before treating any assessment as a current finding.</div>
+
 ## 1. Country Overview
 - Official Name:
 - Capital:
