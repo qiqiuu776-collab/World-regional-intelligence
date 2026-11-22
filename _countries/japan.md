@@ -1,9 +1,14 @@
+---
+title: Japan
+region: East Asia
+category: Country profile
+summary: A structured profile of Japan's political institutions, economy, society, foreign relations and strategic environment.
+last_updated: November 2026
+tags: [Japan, East Asia, country profile]
+permalink: /countries/japan.html
+---
 
-# South Korea
-
-**Country Profile | East Asia**
-
-Last Updated: November 2026
+<div class="note">This profile is a structured research framework, not a verified current country report. Add dated facts, primary-source links and clearly labelled analysis before treating any assessment as a current finding.</div>
 
 ## 1. Country Overview
 - Official Name:
@@ -30,7 +35,7 @@ Last Updated: November 2026
 ## 4. Foreign Relations
 - Relations with China
 - Relations with the United States
-- Relations with Japan
+- Relations with South Korea
 - Relations with North Korea
 - Role in Regional and Global Affairs
 

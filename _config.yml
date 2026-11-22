@@ -1,0 +1,55 @@
+title: World in Context
+description: Independent research on countries, regions and global affairs.
+url: "https://qiqiuu776-collab.github.io"
+baseurl: "/World-regional-intelligence"
+markdown: kramdown
+permalink: pretty
+
+collections:
+  countries:
+    output: true
+  regions:
+    output: true
+  daily_affairs:
+    output: true
+  history:
+    output: true
+  global_issues:
+    output: true
+  research:
+    output: true
+
+defaults:
+  - scope:
+      path: "_countries"
+      type: countries
+    values:
+      layout: article
+  - scope:
+      path: "_regions"
+      type: regions
+    values:
+      layout: article
+  - scope:
+      path: "_daily_affairs"
+      type: daily_affairs
+    values:
+      layout: article
+  - scope:
+      path: "_history"
+      type: history
+    values:
+      layout: article
+  - scope:
+      path: "_global_issues"
+      type: global_issues
+    values:
+      layout: article
+  - scope:
+      path: "_research"
+      type: research
+    values:
+      layout: article
+
+exclude:
+  - world-in-context-site.zip

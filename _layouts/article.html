@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<section class="pagehead">
+  {% if page.category or page.region %}<div class="eyebrow">{{ page.region | default: page.category | escape }}{% if page.region and page.category %} · {{ page.category | escape }}{% endif %}</div>{% endif %}
+  <h1>{{ page.title | escape }}</h1>
+  {% if page.summary %}<p>{{ page.summary | escape }}</p>{% endif %}
+  {% if page.last_updated %}<small>Last updated: {{ page.last_updated | escape }}</small>{% endif %}
+</section>
+<div class="layout">
+  <article class="article">
+    {{ content }}
+  </article>
+  <aside class="side">
+    <h3>Explore</h3>
+    <a href="{{ '/countries/index.html' | relative_url }}">Country profiles</a>
+    <a href="{{ '/regions/index.html' | relative_url }}">Regional studies</a>
+    <a href="{{ '/daily-affairs/index.html' | relative_url }}">Daily briefings</a>
+    <a href="{{ '/research/index.html' | relative_url }}">Research &amp; analysis</a>
+    <a href="{{ '/sources/index.html' | relative_url }}">Sources</a>
+  </aside>
+</div>
