@@ -5,7 +5,10 @@ summary: Research notes, policy briefs and analytical writing that moves beyond 
 ---
 <section class="pagehead"><div class="eyebrow">Independent analysis</div><h1>Research &amp; Analysis</h1><p>{{ page.summary }}</p></section>
 <div class="layout"><article class="article">
-  {% include article-list.html collection="research" label="Research" empty_text="Published research will appear here when Markdown files are added to _research/." %}
+  <section id="commentary">
+    <h2>Published perspective &amp; commentary</h2>
+    {% include article-list.html collection="research" label="Research" empty_text="Commentary and analysis will appear here when Markdown files are added to _research/." %}
+  </section>
   <h2>Suggested policy brief structure</h2><ol><li>Executive summary: the question and main finding.</li><li>Issue background: what happened and why now.</li><li>Stakeholder map: interests, influence and constraints.</li><li>Policy options: realistic choices and trade-offs.</li><li>Implications: political, economic, diplomatic and business effects.</li><li>Assessment: evidence-based judgement, uncertainty and scenarios.</li><li>References: traceable sources and publication dates.</li></ol>
   <div class="note">Label your own judgement explicitly and distinguish it from source-reported facts.</div>
 </article><aside class="side"><h3>Explore</h3><a href="{{ '/countries/index.html' | relative_url }}">Country profiles</a><a href="{{ '/regions/index.html' | relative_url }}">Regional studies</a><a href="{{ '/sources/index.html' | relative_url }}">Sources</a></aside></div>

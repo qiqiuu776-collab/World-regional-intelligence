@@ -1,72 +1,82 @@
 ---
 layout: default
 title: World in Context
-summary: A working atlas of countries, regions and policy, organized around place, time and evidence.
+summary: An interactive atlas of cultural exchange, regional connections and the changing shape of globalization.
 ---
-<section class="atlas-hero">
-  <div class="atlas-intro">
-    <div class="eyebrow">World in Context · Field atlas · 2026</div>
-    <h1>A working atlas of countries, regions and policy.</h1>
-    <p class="lead">Research files that connect country profiles, regional relationships and current affairs with sources and historical context.</p>
-    <div class="hero-meta"><span>Coverage · Countries &amp; regions</span><span>Research desk · East Asia</span></div>
+<section class="atlas-intro" aria-labelledby="atlas-title">
+  <div class="atlas-intro-copy">
+    <p class="eyebrow">A field atlas of connection and distance</p>
+    <h1 id="atlas-title">The world has never connected in just one direction.</h1>
+    <p class="dek">Follow selected routes of exchange, migration, ideas and trade — and see how connection changes over time.</p>
   </div>
-  <div class="locator">
-    <div class="locator-head"><span>Regional locator · East Asia</span><span>Schematic · not to scale</span></div>
-    <svg viewBox="0 0 480 290" role="img" aria-labelledby="locator-title locator-desc">
-      <title id="locator-title">East Asia regional locator</title>
-      <desc id="locator-desc">A coordinate grid marking Beijing, Seoul and Tokyo without political borders.</desc>
-      <rect class="map-frame" x="34" y="20" width="414" height="232" />
-      <g class="map-grid">
-        <path d="M103 20V252 M172 20V252 M241 20V252 M310 20V252 M379 20V252" />
-        <path d="M34 78H448 M34 136H448 M34 194H448" />
+  <p class="atlas-edition"><span>WORLD IN CONTEXT</span><br>Historical atlas · 3000 BCE—2026</p>
+</section>
+
+<section class="map-story" data-atlas aria-label="Interactive world history map">
+  <div class="map-topline"><span id="map-period">A world of regional networks</span><span>Selected routes · schematic, not to scale</span></div>
+  <div class="map-stage">
+    <svg class="world-map" viewBox="0 0 1000 500" role="img" aria-labelledby="world-map-title world-map-desc" preserveAspectRatio="xMidYMid meet">
+      <title id="world-map-title">World map of historical cultural exchange</title>
+      <desc id="world-map-desc">A schematic map. Drag the timeline below to see selected routes and historical context change by period.</desc>
+      <defs>
+        <pattern id="map-graticule" width="100" height="72" patternUnits="userSpaceOnUse">
+          <path d="M100 0H0V72" fill="none" class="graticule-line" />
+        </pattern>
+      </defs>
+      <rect class="map-ocean" x="0" y="0" width="1000" height="500" />
+      <rect x="0" y="0" width="1000" height="500" fill="url(#map-graticule)" />
+      <g class="land" aria-hidden="true">
+        <path d="M80 102 106 82 145 76 168 58 201 65 217 79 251 82 274 101 291 105 304 128 291 145 269 150 256 168 240 170 227 193 211 202 194 223 181 215 178 192 164 180 151 163 133 153 120 137 105 129 95 114Z" />
+        <path d="M258 200 273 207 283 222 291 227 296 249 309 268 304 294 316 314 308 340 302 361 287 385 281 416 269 433 259 413 256 388 246 367 248 341 239 319 240 295 230 273 235 248 244 230Z" />
+        <path d="M422 103 439 89 466 90 475 102 467 112 446 116Z" />
+        <path d="M470 125 488 112 511 115 526 126 535 141 526 153 512 158 508 174 496 184 484 174 475 159 462 150 458 137Z" />
+        <path d="M489 187 515 177 543 180 567 194 579 217 575 244 561 269 553 297 537 325 522 349 511 336 508 309 493 286 490 260 477 237 480 213 471 198Z" />
+        <path d="M526 111 549 95 581 91 604 78 640 77 665 88 701 83 731 91 761 84 790 93 824 90 848 104 875 107 895 125 921 132 939 149 925 164 897 161 881 177 858 174 841 188 819 187 797 197 771 191 751 202 728 196 708 204 690 194 667 201 649 187 629 183 613 168 592 161 574 147 556 144 543 132 530 129Z" />
+        <path d="M604 185 626 184 641 196 648 214 641 229 629 222 616 213Z" />
+        <path d="M704 193 728 198 747 211 764 224 770 241 762 254 746 246 732 233 715 224Z" />
+        <path d="M865 298 891 288 920 292 940 307 935 324 918 333 895 329 879 318 864 312Z" />
+        <path d="M905 222 914 219 918 226 912 232Z" />
+        <path d="M963 235 969 232 973 239 968 244Z" />
+        <path d="M328 59 351 45 377 50 395 65 390 80 371 86 355 79 338 79Z" />
       </g>
-      <g class="map-coordinate">
-        <text x="34" y="270">105°E</text><text x="155" y="270">120°E</text><text x="293" y="270">135°E</text><text x="405" y="270">150°E</text>
-        <text x="5" y="24">50°N</text><text x="5" y="140">35°N</text><text x="5" y="252">20°N</text>
-      </g>
-      <g>
-        <circle class="map-ring" cx="139" cy="98" r="10" /><circle class="map-point" cx="139" cy="98" r="4" />
-        <text class="map-label" x="151" y="94">Beijing</text><text class="map-coordinate" x="151" y="107">39.9°N · 116.4°E</text>
-        <circle class="map-ring" cx="236" cy="116" r="10" /><circle class="map-point" cx="236" cy="116" r="4" />
-        <text class="map-label" x="248" y="112">Seoul</text><text class="map-coordinate" x="248" y="125">37.6°N · 127.0°E</text>
-        <circle class="map-ring" cx="354" cy="131" r="10" /><circle class="map-point" cx="354" cy="131" r="4" />
-        <text class="map-label" x="366" y="127">Tokyo</text><text class="map-coordinate" x="366" y="140">35.7°N · 139.7°E</text>
-      </g>
+      <g class="route-layer" data-route-layer aria-hidden="true"></g>
+      <g class="place-layer" data-place-layer aria-hidden="true"></g>
+      <text class="map-ocean-label" x="92" y="284">PACIFIC</text>
+      <text class="map-ocean-label" x="440" y="380">ATLANTIC</text>
+      <text class="map-ocean-label" x="662" y="270">INDIAN OCEAN</text>
     </svg>
-    <div class="locator-caption"><span>East Asian research desk</span><span>01 / 01</span></div>
+    <aside class="event-card" aria-live="polite" aria-atomic="true">
+      <p class="event-date" data-event-date>c. 2600 BCE</p>
+      <h2 data-event-title>Trade across the Gulf</h2>
+      <p class="event-copy" data-event-copy>Long-distance exchange linked Mesopotamia, the Gulf, Iran and the Indus region. These were overlapping regional networks, not a single world system.</p>
+      <p class="event-routes" data-event-routes>Mesopotamia · Persian Gulf · Indus</p>
+      <a class="source-link" data-event-source href="https://www.metmuseum.org/toah/ht/02/wam.html" target="_blank" rel="noopener">Read the source ↗</a>
+    </aside>
+    <div class="map-legend" aria-label="Map legend"><span><i class="legend-line"></i>Exchange</span><span><i class="legend-line legend-coercion"></i>Coercive exchange</span><span><i class="legend-line legend-friction"></i>Restricted or rerouted</span></div>
   </div>
+
+  <div class="timeline-dock">
+    <div class="timeline-heading"><label for="history-time">Move through time</label><output data-time-output for="history-time">c. 2600 BCE</output></div>
+    <input id="history-time" class="timeline-range" data-time-range type="range" min="-3000" max="2026" step="1" value="-2600" aria-label="Choose a year from 3000 BCE to 2026 CE">
+    <div class="timeline-scale" aria-hidden="true"><span>3000 BCE</span><span>2000 BCE</span><span>1000 BCE</span><span>1 CE</span><span>1000 CE</span><span>1500</span><span>Today</span></div>
+    <div class="timeline-jumps" data-timeline-jumps aria-label="Jump to a documented moment"></div>
+    <p class="timeline-note">A selective record, not a complete census. Between dated moments, the map shows the previous entry; lines show broad corridors, not exact paths or trade volume.</p>
+  </div>
+  <script type="application/json" data-atlas-events>{{ site.data.exchange_timeline | jsonify }}</script>
 </section>
 
-<section class="atlas-section">
-  <div class="section-heading"><span class="section-id">01 / Regional desks</span><h2>Browse by region</h2></div>
-  <div class="directory">
-    <a class="directory-row" href="{{ '/regions/east-asia.html' | relative_url }}"><span class="directory-number">01</span><span><strong>East Asia</strong><p>China, Japan and South Korea · Trade, security, diplomacy and historical ties</p></span><span class="directory-arrow">↗</span></a>
-    <a class="directory-row" href="{{ '/regions/index.html' | relative_url }}"><span class="directory-number">02+</span><span><strong>Regional directory</strong><p>Browse current desks and planned regional coverage</p></span><span class="directory-arrow">↗</span></a>
-  </div>
+<section class="atlas-note" id="map-method" aria-label="How to read this map">
+  <p><strong>Connection was never evenly shared.</strong> Trade and ideas moved alongside conquest, colonial rule, forced migration and disease. Some routes expanded while others narrowed. The map follows documented episodes rather than treating history as a steady march toward one connected world.</p>
+  <a href="{{ '/sources/index.html' | relative_url }}">Sources &amp; research standards ↗</a>
 </section>
 
-<section class="atlas-section">
-  <div class="section-heading"><span class="section-id">02 / Country files</span><h2>East Asia profiles</h2></div>
-  {% assign country_profiles = site.countries | sort: "title" %}
-  <div class="countries">
-    {% for profile in country_profiles %}
-    <a class="country" href="{{ profile.url | relative_url }}"><small>{{ profile.region | escape }}</small><strong>{{ profile.title | escape }}</strong><p>{{ profile.summary | escape }}</p></a>
-    {% endfor %}
+<section class="home-index" aria-label="Explore the research archive">
+  <div class="home-index-heading"><span class="eyebrow">The archive</span><h2>Continue reading</h2></div>
+  <div class="home-links">
+    <a href="{{ '/daily-affairs/index.html' | relative_url }}"><span>Daily</span><small>Briefings and developments</small><b>↗</b></a>
+    <a href="{{ '/countries/index.html' | relative_url }}"><span>Countries</span><small>Profiles by place</small><b>↗</b></a>
+    <a href="{{ '/research/index.html' | relative_url }}"><span>Perspective</span><small>Analysis and context</small><b>↗</b></a>
+    <a href="{{ '/global-issues/index.html' | relative_url }}"><span>Market</span><small>Trade, energy and technology</small><b>↗</b></a>
+    <a href="{{ '/research/index.html#commentary' | relative_url }}"><span>Comment</span><small>Notes and interpretation</small><b>↗</b></a>
   </div>
-</section>
-
-<section class="atlas-section">
-  <div class="section-heading"><span class="section-id">03 / Collections</span><h2>Browse the archive</h2></div>
-  <div class="directory">
-    <a class="directory-row" href="{{ '/daily-affairs/index.html' | relative_url }}"><span class="directory-number">BRF</span><span><strong>Daily affairs</strong><p>Developments with dates, sources, context and implications</p></span><span class="directory-arrow">↗</span></a>
-    <a class="directory-row" href="{{ '/history/index.html' | relative_url }}"><span class="directory-number">HIS</span><span><strong>Historical context</strong><p>Events and legacies shaping current affairs</p></span><span class="directory-arrow">↗</span></a>
-    <a class="directory-row" href="{{ '/global-issues/index.html' | relative_url }}"><span class="directory-number">GLB</span><span><strong>Global issues</strong><p>Trade, technology, energy, security and governance</p></span><span class="directory-arrow">↗</span></a>
-    <a class="directory-row" href="{{ '/research/index.html' | relative_url }}"><span class="directory-number">RES</span><span><strong>Research &amp; analysis</strong><p>Independent research notes, policy briefs and assessments</p></span><span class="directory-arrow">↗</span></a>
-  </div>
-</section>
-
-<section class="atlas-section">
-  <div class="section-heading"><span class="section-id">04 / Search</span><h2>Find a file</h2></div>
-  <form class="search" data-search><input aria-label="Search the archive" placeholder="Search countries, regions or themes"><button>Search →</button></form>
-  <div class="results" data-results></div>
 </section>
