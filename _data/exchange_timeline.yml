@@ -3,147 +3,137 @@
   period: Early urban networks
   title: Trade across the Gulf
   copy: Long-distance exchange linked Mesopotamia, the Gulf, Iran and the Indus region. These were overlapping regional networks, not a single world system.
-  routes_label: Mesopotamia · Persian Gulf · Indus
+  regions_label: West Asia · South Asia
+  layout_note: West Asia and South Asia draw closer around Gulf exchange; most other regions remain far apart.
+  integration: 0.08
+  links:
+    - [west-asia, south-asia, 0.82]
+    - [west-asia, central-asia, 0.34]
   source_title: Mesopotamia, 8000–2000 B.C. · The Metropolitan Museum of Art
   source_url: https://www.metmuseum.org/toah/ht/02/wam.html
-  routes:
-    - from: [45, 30]
-      to: [67, 25]
-      kind: exchange
-    - from: [50, 28]
-      to: [70, 27]
-      kind: exchange
 - year: -200
   date: 2nd century BCE
   period: Eurasian corridors
   title: Routes across inner Asia
-  copy: Overland and maritime routes gradually linked East Asia, Central Asia, South Asia and western Eurasia. Along these networks, goods, technologies, knowledge and religions moved. Merchants usually travelled sections; there was no single road or unified system.
-  routes_label: Chang’an · Central Asia · western Eurasia
-  source_title: "Silk Roads: Chang’an–Tianshan Corridor · UNESCO"
+  copy: Overland and maritime networks linked East Asia, Central Asia, South Asia and western Eurasia. Goods, technologies, knowledge and religions moved along connected sections, without one road or unified system.
+  regions_label: East Asia · Central Asia · West Asia · Europe
+  layout_note: The Eurasian regions gather into a broad corridor while the Americas remain apart.
+  integration: 0.24
+  links:
+    - [east-asia, central-asia, 0.84]
+    - [central-asia, west-asia, 0.76]
+    - [west-asia, south-asia, 0.52]
+    - [west-asia, europe, 0.42]
+  source_title: Silk Roads: Chang’an–Tianshan Corridor · UNESCO
   source_url: https://whc.unesco.org/en/list/1442/
-  routes:
-    - from: [108, 34]
-      to: [75, 40]
-      kind: exchange
-    - from: [75, 40]
-      to: [45, 35]
-      kind: exchange
-    - from: [45, 35]
-      to: [15, 38]
-      kind: exchange
 - year: 1000
   date: 10th century onward
   period: Monsoon worlds
   title: Ports around the Indian Ocean
-  copy: Seasonal monsoon sailing connected East African port cities with Arabia, India and Southeast Asia. Swahili societies helped shape the routes and the cultural worlds around them; they were active participants, not simply endpoints of outside trade.
-  routes_label: East Africa · Arabia · India · Southeast Asia
+  copy: Seasonal monsoon sailing connected East African port cities with Arabia, India and Southeast Asia. Swahili societies helped shape these routes as active participants in exchange.
+  regions_label: East Africa · West Asia · South Asia · Southeast Asia
+  layout_note: East Africa, West Asia, South Asia and Southeast Asia move toward a shared Indian Ocean network.
+  integration: 0.32
+  links:
+    - [east-africa, west-asia, 0.76]
+    - [west-asia, south-asia, 0.78]
+    - [south-asia, southeast-asia, 0.84]
+    - [east-africa, south-asia, 0.58]
   source_title: The Historic Town and Archaeological Site of Gedi · UNESCO
   source_url: https://whc.unesco.org/en/list/1720/
-  routes:
-    - from: [39, -4]
-      to: [52, 25]
-      kind: exchange
-    - from: [52, 25]
-      to: [78, 20]
-      kind: exchange
-    - from: [78, 20]
-      to: [110, 5]
-      kind: exchange
 - year: 1200
   date: 13th century
   period: Connected, but not equal
   title: Kilwa and a wider sea network
-  copy: East African city-states such as Kilwa traded with Arabia, India and China. Gold and ivory moved from the interior; ceramics, cloth and other goods arrived by sea. Exchange brought wealth and also reflected unequal power.
-  routes_label: Kilwa · Arabia · India · China
+  copy: East African city-states such as Kilwa traded with Arabia, India and China. Gold and ivory moved from the interior; ceramics and cloth arrived by sea. Exchange also reflected unequal power.
+  regions_label: East Africa · West Asia · South Asia · East Asia
+  layout_note: East Africa draws closer to South, West and East Asia through Indian Ocean commerce.
+  integration: 0.39
+  links:
+    - [east-africa, west-asia, 0.78]
+    - [east-africa, south-asia, 0.88]
+    - [east-africa, east-asia, 0.48]
+    - [south-asia, southeast-asia, 0.78]
   source_title: Ruins of Kilwa Kisiwani and Songo Mnara · UNESCO
   source_url: https://whc.unesco.org/en/list/144/
-  routes:
-    - from: [39, -4]
-      to: [50, 25]
-      kind: exchange
-    - from: [39, -4]
-      to: [78, 20]
-      kind: exchange
-    - from: [39, -4]
-      to: [115, 25]
-      kind: exchange
 - year: 1492
   date: 1492 onward
   period: Atlantic crossings
   title: Exchange, conquest and forced movement
-  copy: Sustained Atlantic crossings joined the Americas, Europe and Africa in new circuits. Plants and animals travelled in both directions, while conquest, epidemics and the forced enslavement and transport of millions shaped the exchange.
-  routes_label: The Americas · Europe · West Africa
+  copy: Sustained Atlantic crossings connected the Americas, Europe and Africa. Plants and animals moved in both directions, while conquest, epidemics and the forced enslavement and transport of millions shaped the exchange.
+  regions_label: Europe · West Africa · Caribbean · Central America
+  layout_note: Atlantic regions converge through exchange shaped by colonial conquest and forced migration.
+  integration: 0.54
+  links:
+    - [europe, west-africa, 0.84]
+    - [west-africa, caribbean, 0.88]
+    - [caribbean, central-america, 0.68]
+    - [europe, north-america, 0.62]
   source_title: The Columbian Exchange · Smithsonian Libraries
   source_url: https://www.si.edu/object/1493-uncovering-new-world-columbus-created-charles-c-mann%3Asiris_sil_979693
-  routes:
-    - from: [-75, 40]
-      to: [-5, 50]
-      kind: coercion
-    - from: [-5, 50]
-      to: [-5, 5]
-      kind: coercion
-    - from: [-5, 5]
-      to: [-75, 15]
-      kind: coercion
 - year: 1565
   date: 1565 onward
   period: Trans-Pacific links
   title: Silver west, silk east
-  copy: Manila–Acapulco galleons joined Asian markets to the Americas across the Pacific. Chinese merchants in Manila linked silk and ceramics to American silver; the route also rested on Spanish colonial power.
-  routes_label: Manila · Pacific · Acapulco
+  copy: Manila–Acapulco galleons connected Asian markets to the Americas across the Pacific. Chinese merchants in Manila linked silk and ceramics with American silver; the route rested on Spanish colonial power.
+  regions_label: Southeast Asia · East Asia · Central America
+  layout_note: Southeast Asia, East Asia and Central America move closer around the trans-Pacific trade, alongside Atlantic ties.
+  integration: 0.63
+  links:
+    - [southeast-asia, east-asia, 0.76]
+    - [southeast-asia, central-america, 0.92]
+    - [central-america, north-america, 0.46]
+    - [europe, west-africa, 0.64]
+    - [west-africa, caribbean, 0.68]
   source_title: Manila–Acapulco trade · Library of Congress
   source_url: https://blogs.loc.gov/international-collections/2021/10/negotiating-empire-part-i-from-magellan-to-the-founding-of-manila-16th-18th-centuries/
-  routes:
-    - from: [121, 14]
-      to: [-100, 20]
-      kind: coercion
 - year: 1866
   date: 1866 onward
   period: Messages cross oceans
   title: The cable changes distance
-  copy: The successful transatlantic telegraph cable cut message times from weeks to minutes. The network extended unevenly, serving diplomacy and commerce while much of the world remained beyond its reach.
-  routes_label: Western Europe · North America
+  copy: The successful transatlantic telegraph cable cut message times from weeks to minutes. The network served diplomacy and commerce, while much of the world remained beyond its reach.
+  regions_label: Europe · North America
+  layout_note: Europe and North America draw sharply together around the transatlantic cable; other regions remain unevenly connected.
+  integration: 0.68
+  links:
+    - [europe, north-america, 0.96]
+    - [europe, west-africa, 0.28]
   source_title: U.S. Diplomacy and the Telegraph · U.S. Department of State
   source_url: https://history.state.gov/milestones/1866-1898/telegraph
-  routes:
-    - from: [-74, 40]
-      to: [0, 50]
-      kind: exchange
 - year: 1995
   date: 1995 onward
   period: Rules for a wider trading system
   title: The WTO begins work
-  copy: The World Trade Organization succeeded the postwar GATT system and added rules covering services and intellectual property as well as goods. The rules formalized global commerce, but participation and benefits remained uneven.
-  routes_label: Europe · North America · East Asia
+  copy: The World Trade Organization expanded multilateral rules to cover services and intellectual property as well as goods. Trade links grew across several regions, while access and gains remained uneven.
+  regions_label: North America · Europe · East Asia · Southeast Asia
+  layout_note: North America, Europe and East Asia form a tighter cluster; Southeast and South Asia join expanding supply networks.
+  integration: 0.86
+  links:
+    - [north-america, europe, 0.88]
+    - [europe, east-asia, 0.84]
+    - [north-america, east-asia, 0.78]
+    - [east-asia, southeast-asia, 0.82]
+    - [southeast-asia, south-asia, 0.55]
+    - [europe, west-africa, 0.42]
   source_title: History of the multilateral trading system · WTO
   source_url: https://www.wto.org/english/thewto_e/history_e/history_e.htm
-  routes:
-    - from: [-74, 40]
-      to: [0, 50]
-      kind: exchange
-    - from: [0, 50]
-      to: [110, 35]
-      kind: exchange
-    - from: [110, 35]
-      to: [-74, 40]
-      kind: exchange
 - year: 2024
   date: 2024–2026
   period: Selective connection
-  title: Trade reroutes; ties do not simply disappear
-  copy: Global trade reached a record in 2025 even as policy barriers and geopolitical tensions redirected some links. UN Trade and Development reports China–U.S. trade fell by more than 20% since 2024; East Asian supply networks and Africa–Europe export links continued to grow. This is selective fragmentation, not a uniform retreat from global exchange.
-  routes_label: China–U.S. · East Asia · Africa–Europe
-  source_title: Trade and Development Report 2026 · UN Trade and Development
-  source_url: https://unctad.org/publication/trade-and-development-report-2026
-  secondary_source_title: Global Trade Outlook and Statistics, March 2026 · WTO
-  secondary_source_url: https://www.wto.org/english/res_e/booksp_e/gtos0326_e.pdf
-  routes:
-    - from: [116, 40]
-      to: [-98, 38]
-      kind: friction
-    - from: [110, 33]
-      to: [135, 36]
-      kind: exchange
-    - from: [0, 8]
-      to: [10, 50]
-      kind: exchange
+  title: A split in ties, not a retreat from trade
+  copy: The WTO’s October 2026 outlook says U.S.–China trade decoupling accelerated, while the wider gap between trade within and across geopolitical blocs narrowed. Goods trade remained resilient even as new restrictions rose and trade-facilitating measures also increased.
+  regions_label: North America · East Asia · Europe · Africa · West Asia
+  layout_note: North America and East Asia separate around accelerating U.S.–China decoupling. Other blocks remain clustered: current evidence does not show a general retreat from global trade.
+  integration: 0.74
+  links:
+    - [north-america, europe, 0.68]
+    - [east-asia, southeast-asia, 0.88]
+    - [southeast-asia, south-asia, 0.58]
+    - [europe, east-asia, 0.36]
+    - [europe, west-africa, 0.42]
+  tensions:
+    - [north-america, east-asia, 0.92]
+  source_title: Global Trade Outlook and Statistics · WTO, October 2026
+  source_url: https://www.wto.org/english/res_e/publications_e/global-trade-outlook-and-statistics_execsum_e.htm
+  secondary_source_title: WTO Trade Monitoring update · 17 November 2026
+  secondary_source_url: https://www.wto.org/english/news_e/news26_e/tmwto_17nov26_552_e.htm
