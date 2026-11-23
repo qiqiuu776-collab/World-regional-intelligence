@@ -4,7 +4,7 @@ An independent research platform exploring countries, regions and global affairs
 
 Website: https://qiqiuu776-collab.github.io/World-regional-intelligence/
 
-The homepage is an interactive historical atlas. Its timeline records selected episodes in `_data/exchange_timeline.yml`; each entry should link to a reliable source and describe routes as generalized, not to scale.
+The homepage is an interactive historical atlas. It uses real 1:10m Natural Earth country boundaries, grouped into regional blocks and projected with Robinson. The timeline in `_data/exchange_timeline.yml` describes selected episodes and qualitative regional ties; its Connection view moves the real map blocks without drawing routes. The layout values are editorial illustrations, not measured trade data.
 
 ## Writing and publishing
 
@@ -29,7 +29,9 @@ For GitHub Pages, use Settings > Pages > Deploy from a branch > main > /(root). 
 - _layouts/: shared page layouts
 - _includes/: reusable collection listing
 - assets/: shared styles and scripts
-- _data/exchange_timeline.yml: sourced moments and schematic route segments used by the homepage map
+- _data/exchange_timeline.yml: sourced moments, regional ties and selected periods used by the homepage map
+- _includes/regional-map.svg: generated map geometry from Natural Earth country polygons
+- scripts/build-regional-map.py: generator for the regional map SVG
 - sources/: sourcing and editorial standards
 
 ## Editorial principles
@@ -39,3 +41,7 @@ For GitHub Pages, use Settings > Pages > Deploy from a branch > main > /(root). 
 3. Link to original sources wherever possible.
 4. Identify stakeholders and explain policy or business implications.
 5. State uncertainty and competing interpretations fairly.
+
+## Homepage map data
+
+The regional map is built from Natural Earth's 1:10m Admin-0 countries dataset. Natural Earth places its vector data in the public domain; no permission is required. The build script groups country polygons by UN-style subregion into readable regional blocks. The real-position view uses geographic coordinates; connection-view shifts and event-to-event values are qualitative interpretations of the cited historical episodes, not exact distances, route paths or trade volumes.
